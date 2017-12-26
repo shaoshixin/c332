@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@drawable/messager_send_button"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="218dp"
+        android:layout_height="66dp"
+        android:layout_above="@+id/welcome_image_view"
+        android:layout_centerHorizontal="true"
+        android:text="保护环境人人有责 ——               环保随手拍"
+        android:textColor="#BA433B"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/welcome_image_view"
+        android:layout_marginTop="20dp"
+        android:text="       尽自己的微薄之力用行动去拯救地球母亲"
+        android:textColor="#B88B3D"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/welcome_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/welcome1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+</RelativeLayout>

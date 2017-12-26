@@ -1,0 +1,6 @@
+D:\Android Project\GreenPictureWebService\GreenPictureWebService\bin\GreenPictureWebService.dll.config
+D:\Android Project\GreenPictureWebService\GreenPictureWebService\bin\GreenPictureWebService.dll
+D:\Android Project\GreenPictureWebService\GreenPictureWebService\bin\GreenPictureWebService.pdb
+D:\Android Project\GreenPictureWebService\GreenPictureWebService\obj\Release\GreenPictureWebService.csprojResolveAssemblyReference.cache
+D:\Android Project\GreenPictureWebService\GreenPictureWebService\obj\Release\GreenPictureWebService.dll
+D:\Android Project\GreenPictureWebService\GreenPictureWebService\obj\Release\GreenPictureWebService.pdb

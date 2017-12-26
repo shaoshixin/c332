@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_view"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal"
+    android:paddingBottom="10.0px" >
+
+    <Button
+        android:id="@+id/login_btn_cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="80dp"
+        android:text="@string/cancle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/login_btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_btn_cancle"
+        android:layout_alignParentLeft="true"
+        android:text="@string/register" 
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_btn_register"
+        android:text="@string/login" 
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_edit_account"
+        android:layout_centerVertical="true"
+        android:text="没有账号？那先点注册吧!" />
+
+    <EditText
+        android:id="@+id/login_edit_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="45.0sp"
+        android:saveEnabled="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/login_edit_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_edit_pwd"
+        android:ems="10"
+        android:hint="@string/strInputAccHint"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="45.0sp"
+        android:saveEnabled="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_edit_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="欢迎登陆随手拍"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_edit_pwd"
+        android:layout_alignBottom="@+id/login_edit_pwd"
+        android:layout_alignLeft="@+id/login_edit_pwd"
+        android:gravity="center_vertical"
+        android:paddingLeft="7.0sp"
+        android:text="@string/strPswInputLabel"
+        android:textColor="#ff3f3f3f"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/rl_shezhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_edit_account"
+        android:layout_alignBottom="@+id/login_edit_account"
+        android:layout_alignLeft="@+id/login_edit_account"
+        android:gravity="center_vertical"
+        android:paddingLeft="7.0sp"
+        android:text="@string/strAccInputLabel"
+        android:textColor="#ff3f3f3f"
+        android:textSize="16.0dip" />
+
+</RelativeLayout>

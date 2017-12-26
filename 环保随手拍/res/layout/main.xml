@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top" >
+
+        <com.tianditu.android.maps.MapView
+            android:id="@+id/main_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="398dp"
+            android:layout_alignBottom="@+id/content_layout"
+            android:layout_alignParentTop="true" >
+
+            </com.tianditu.android.maps.MapView>
+        <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_map"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13" >
+
+                <ImageView
+                    android:id="@+id/iv_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/map1" />
+
+                <TextView
+                    android:id="@+id/tv_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_map"
+                    android:layout_centerHorizontal="true"
+                    android:text="污染地图"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14" >
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/camera1" />
+
+                <TextView
+                    android:id="@+id/tv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_camera"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/bottom_tab_wantknow"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05" >
+
+                <ImageView
+                    android:id="@+id/iv_myspace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/masage" />
+
+                <TextView
+                    android:id="@+id/tv_myspace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_myspace"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/bottom_tab_my"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_shezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" >
+
+                <ImageView
+                    android:id="@+id/iv_shezhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/geren" />
+
+                <TextView
+                    android:id="@+id/tv_shezhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_shezhi"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/bottom_tab_shezhi"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/ll_bottom_tab"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+            
+            
+            
+        </LinearLayout>
+
+       <!--  <Button
+            android:id="@+id/button1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/buttonAdd"
+            android:background="@drawable/xiangxi" /> -->
+
+        <Button
+            android:id="@+id/weixing"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/weixing" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/content_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/lot" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

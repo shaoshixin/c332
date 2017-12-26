@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="topbar_bg">#bbffff</color>
+    <color name="bottomtab_normal">#0E650B</color>
+    <color name="bottomtab_press">#8b572a</color>
+	<color name="line">#c8bca5</color>
+	<color name="tianlan">#00ffff</color>
+	<color name="white">#ffffff</color>
+</resources>

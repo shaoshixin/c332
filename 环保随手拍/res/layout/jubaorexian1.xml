@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal2"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/backview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="clip_horizontal|start|top"
+        android:scaleType="fitStart"
+        android:src="@drawable/tellnumber" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:text="12369环保举报热线                                            (中国环境保护部环保举报电话)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/callbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:background="@drawable/top_tab_background3"
+        android:text="一键拨打"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.43"
+        android:text="除了12369以外，也可以致电上级环保部门，当地及上级政府信箱，如县长、市长、省长信箱，信访局，上级环保部门或者政府秘书处、监察局、信访局他们都会以督办、限时办理的文件形式下给12369，要求环保部处理并回复处理意见。 "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#090E72"
+        android:textSize="19sp" />
+
+</LinearLayout>
